@@ -1,6 +1,6 @@
 // from https://github.com/tkramm/galileo/blob/master/components/nema17.scad
 
-module nema17(clearance = 0){
+module nema17motor(clearance = 0){
 	if(clearance > 0){
 		translate([0,0,-24]) cube([42.2,42.2,48],center=true);
 		cylinder(r=11.5,h=20,$fn=50,center=true);
